@@ -1,27 +1,21 @@
-import logo from "./rlogo.png";
-import { useState } from "react";
+import logo from "./rlogo.png"
 import './App.css';
 
-let concepts = ['Props','Hooks','dynamic Values','States','useEffect'];
 
+let concepts = ['Props','Hooks','dynamic Vlaues','states','useEffect']
+
+let random = (max)=>{
+  return Math.floor(Math.random()*(max+1));
+
+}
+setTimeout(random, 1000);
 function App() {
-  const [randomConcept, setRandomConcept] = useState(concepts[0]);
-
-  const changeRandomConcept = () => {
-    setRandomConcept(concepts[randomNumbers(4)]);
-    setTimeout(changeRandomConcept, 1000);
-  };
-
-  const randomNumbers = (max) => {
-    return Math.floor(Math.random() * (max + 1));
-  };
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {randomConcept} are React core concepts which are important to understand...
+          {concepts[random(5)]} are React core conepts which are important to understand...
         </p>
         <a
           className="App-link"
@@ -37,4 +31,3 @@ function App() {
 }
 
 export default App;
-
