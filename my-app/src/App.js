@@ -4,7 +4,12 @@ import TabButton from './components/TabButton';
 
 
 
-function App() {
+function App() 
+{
+
+  const handleClick=(click)=>{
+
+  }
   return (
     <>
   
@@ -20,10 +25,10 @@ function App() {
 
         <section>
           <menu>
-            <TabButton>Jsx</TabButton>
-            <TabButton>components</TabButton>
-            <TabButton>React</TabButton>
-            <TabButton>Hooks</TabButton>
+            <TabButton ClickBtn={()=>{handleClick('Jsx')}}>Jsx</TabButton>
+            <TabButton ClickBtn={()=>{handleClick('Components')}}>components</TabButton>
+            <TabButton ClickBtn={()=>{handleClick('React')}}>React</TabButton>
+            <TabButton ClickBtn={()=>{handleClick('Hooks')}}>Hooks</TabButton>
           </menu>
         </section>
       </div>
