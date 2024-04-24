@@ -24,8 +24,8 @@ const [selectedBtn,setselectedBtn] = useState('Components')
         </ul>
  <section>
           <menu>
+           <TabButton ClickBtn={()=>handleClick('Components')}>Components</TabButton>
             <TabButton ClickBtn={()=>handleClick('Jsx')}>Jsx</TabButton>
-            <TabButton ClickBtn={()=>handleClick('Components')}>components</TabButton>
             <TabButton ClickBtn={()=>handleClick('React')}>React</TabButton>
             <TabButton ClickBtn={()=>handleClick('Hooks')}>Hooks</TabButton>
           </menu>
