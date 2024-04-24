@@ -6,17 +6,15 @@ import { EXAMPLES } from './components/data';
 
 
 
-function App() 
-{
-const [selectedBtn,setselectedBtn] = useState('Plz click on a button')
+function App() {
+const [selectedBtn,setselectedBtn] = useState('Components')
   const handleClick=(Click)=>{
      setselectedBtn(Click);
      console.log(Click);
   }
   return (
     <>
-  
-      <div className="App">
+   <div className="App">
       <h2>It's Time to start the journey</h2>
         <ul>
           <CoreConcepts title="React Concepts" description="lorem jeydu hwdwwdbaghvdweb dvgeydqhdq dvededhd"/>
@@ -48,10 +46,7 @@ const [selectedBtn,setselectedBtn] = useState('Plz click on a button')
             </div>
         </section>
       </div>
-        
-      
-   
-</>
+    </>
   );
 }
 
