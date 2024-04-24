@@ -2,6 +2,7 @@ import './App.css';
 import React,{useState} from 'react';
 import CoreConcepts from "./components/CoreConcepts"
 import TabButton from './components/TabButton';
+import { EXAMPLES } from './components/data';
 
 
 
@@ -32,7 +33,19 @@ const [selectedBtn,setselectedBtn] = useState('Plz click on a button')
             <TabButton ClickBtn={()=>handleClick('React')}>React</TabButton>
             <TabButton ClickBtn={()=>handleClick('Hooks')}>Hooks</TabButton>
           </menu>
-            {selectedBtn}
+            <div className="">
+              <h2>
+                {EXAMPLES[selectedBtn].title}
+              </h2>
+              <p>
+                {EXAMPLES[selectedBtn].description}
+              </p>
+              <pre>
+                <code>
+                  {EXAMPLES[selectedBtn.code]}
+                </code>
+              </pre>
+            </div>
         </section>
       </div>
         
