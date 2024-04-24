@@ -1,4 +1,5 @@
 import './App.css';
+import React,{useState} from 'react';
 import CoreConcepts from "./components/CoreConcepts"
 import TabButton from './components/TabButton';
 
@@ -6,9 +7,10 @@ import TabButton from './components/TabButton';
 
 function App() 
 {
-
-  const handleClick=(click)=>{
-     return click
+const [selectedBtn,setselectedBtn] = useState('Plz click on a button')
+  const handleClick=(Click)=>{
+     setselectedBtn(Click);
+     console.log(Click);
   }
   return (
     <>
@@ -25,11 +27,12 @@ function App()
 
         <section>
           <menu>
-            <TabButton ClickBtn={()=>{handleClick('Jsx')}}>Jsx</TabButton>
-            <TabButton ClickBtn={()=>{handleClick('Components')}}>components</TabButton>
-            <TabButton ClickBtn={()=>{handleClick('React')}}>React</TabButton>
-            <TabButton ClickBtn={()=>{handleClick('Hooks')}}>Hooks</TabButton>
+            <TabButton ClickBtn={()=>handleClick('Jsx')}>Jsx</TabButton>
+            <TabButton ClickBtn={()=>handleClick('Components')}>components</TabButton>
+            <TabButton ClickBtn={()=>handleClick('React')}>React</TabButton>
+            <TabButton ClickBtn={()=>handleClick('Hooks')}>Hooks</TabButton>
           </menu>
+            {selectedBtn}
         </section>
       </div>
         
