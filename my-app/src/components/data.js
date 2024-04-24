@@ -19,7 +19,7 @@ export const EXAMPLES = {
   </div>`,
     },
     props: {
-        title: 'Props',
+        title: 'React',
         description:
             'Components accept arbitrary inputs called props. They are like function arguments.',
         code: `
@@ -28,7 +28,7 @@ export const EXAMPLES = {
   }`,
     },
     state: {
-        title: 'State',
+        title: 'States',
         description:
             'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
         code: `
