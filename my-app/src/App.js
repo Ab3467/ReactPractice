@@ -9,6 +9,9 @@ function App() {
 
   const handleClick = (clickedBtn) => {
     setSelectedBtn(clickedBtn.toLowerCase()); // Convert button label to lowercase
+    setTimeout(() => {
+      setSelectedBtn(null)
+    }, 1000);
   };
 
   return (
