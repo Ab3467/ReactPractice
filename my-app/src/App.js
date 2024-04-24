@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import TabButton from "./components/TabButton";
 import CoreConcepts from "./components/CoreConcepts";
 import { EXAMPLES } from "./components/data";
+import "./App.css"
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     setSelectedBtn(clickedBtn.toLowerCase()); // Convert button label to lowercase
     setTimeout(() => {
       setSelectedBtn(null)
-    }, 1000);
+    }, 2000);
   };
 
   return (
@@ -32,7 +33,7 @@ function App() {
             <TabButton ClickBtn={() => handleClick('React')}>React</TabButton>
             <TabButton ClickBtn={() => handleClick('Hooks')}>Hooks</TabButton>
           </menu>
-          <div className="">
+          <div id="tab-content">
             <h2>{EXAMPLES[selectedBtn]?.title}</h2>
             <p>{EXAMPLES[selectedBtn]?.description}</p>
             {/* Access code property of the selected example */}
