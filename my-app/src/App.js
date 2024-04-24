@@ -10,7 +10,6 @@ function App() {
 const [selectedBtn,setselectedBtn] = useState('Components')
   const handleClick=(Click)=>{
      setselectedBtn(Click);
-     console.log(Click);
   }
   return (
     <>
@@ -23,8 +22,7 @@ const [selectedBtn,setselectedBtn] = useState('Components')
           <CoreConcepts title="React Concepts" description="lorem jeydu hwdwwdbaghvdweb dvgeydqhdq dvededhd"/>
           <CoreConcepts title="React Concepts" description="lorem jeydu hwdwwdbaghvdweb dvgeydqhdq dvededhd"/>
         </ul>
-
-        <section>
+ <section>
           <menu>
             <TabButton ClickBtn={()=>handleClick('Jsx')}>Jsx</TabButton>
             <TabButton ClickBtn={()=>handleClick('Components')}>components</TabButton>
@@ -44,7 +42,7 @@ const [selectedBtn,setselectedBtn] = useState('Components')
                 </code>
               </pre>
             </div>
-        </section>
+</section>
       </div>
     </>
   );
