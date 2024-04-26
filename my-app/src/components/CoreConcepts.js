@@ -1,9 +1,12 @@
 import React from 'react'
-import "./index.css"
+import "./CoreConcepts.css"
+
+
+
 
 export default function CoreConcepts(props) {
   return (
-    <div className="CoreConcepts">
+    <div className="core-concepts-container">
       
         <h3>{props.title}</h3>
         <p>{props.description}</p>

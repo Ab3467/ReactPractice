@@ -1,0 +1,20 @@
+/* CoreConcepts.css */
+
+.core-concepts-container {
+    border: 2px solid #ffd2d2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .core-concepts-container h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .core-concepts-container p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
